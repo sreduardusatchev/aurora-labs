@@ -22,4 +22,5 @@ COPY *.groovy /usr/share/jenkins/ref/init.groovy.d/
 
 # lets configure Jenkins with some defaults
 COPY *.xml /usr/share/jenkins/ref/
-COPY casc.yaml /var/jenkins_home/casc.yaml
+#COPY casc.yaml /var/jenkins_home/casc.yaml
+COPY casc.yaml /var/jenkins_home/casc_config/casc.yaml

@@ -1,7 +1,7 @@
-version: '3.8'
+version: '3.0'
 services:
   jenkins:
-    image: jenkins/jenkins:lts
+    image: "ghcr.io/sreduardusatchev/aurora-labs:main"
     privileged: true
     user: root
     ports:

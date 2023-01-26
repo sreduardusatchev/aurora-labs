@@ -18,3 +18,4 @@ ssh-slaves:latest
 timestamper:latest
 workflow-aggregator:latest
 ws-cleanup:latest
+github-pullrequest:0.4.0

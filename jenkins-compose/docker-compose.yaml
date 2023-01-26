@@ -1,7 +1,7 @@
 version: '3.0'
 services:
   jenkins:
-    image: "ghcr.io/sreduardusatchev/aurora-labs:main"
+    image: "jenkins/jenkins:latest"
     privileged: true
     user: root
     ports:

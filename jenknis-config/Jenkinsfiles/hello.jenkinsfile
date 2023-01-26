@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    triggers {
+        githubPullRequest()
+    }
+    stages {
+        stage("Run Python Script") {
+            steps {
+                sh 'python scripts/hello.py'
+            }
+        }
+    }
+}

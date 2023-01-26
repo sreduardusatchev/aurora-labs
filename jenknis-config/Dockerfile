@@ -16,11 +16,11 @@ RUN jenkins-plugin-cli -f /usr/share/jenkins/ref/plugins.txt
 
 # so we can use jenkins cli
 COPY jenkins.properties /usr/share/jenkins/ref/
-
+COPY Jenkinsfiles/hello.jenkinsfile /var/jenkins_home/jobs/
 # remove executors in master
-COPY *.groovy /usr/share/jenkins/ref/init.groovy.d/
+#COPY *.groovy /usr/share/jenkins/ref/init.groovy.d/
 
 # lets configure Jenkins with some defaults
-COPY *.xml /usr/share/jenkins/ref/
+#COPY *.xml /usr/share/jenkins/ref/
 #COPY casc.yaml /var/jenkins_home/casc.yaml
 #COPY casc.yaml /var/jenkins_home/casc_config/casc.yaml

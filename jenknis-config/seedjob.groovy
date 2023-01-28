@@ -9,7 +9,7 @@ job('seed_job') {
   }
   steps {
     dsl {
-      external('hellow_world_job.groovy')
+      external('jenknis-config/hellow_world_job.groovy')
     }
   }
 }

@@ -1,7 +1,7 @@
 version: '3.0'
 services:
   jenkins:
-    image: "jenkins:jenkins"
+    image: "jenkins/jenkins:v0.14"
     privileged: true
     user: root
     ports:
@@ -9,6 +9,8 @@ services:
       - "50000:50000"
     container_name: jenkins
     volumes:
-      - ~/jenkins_compose/jenkins_configuration/:/var/jenkins_home/
+      - C:\Users\Nick-T440s\Desktop\aurora-labs\jenkins-compose\jenkins_configuration:/var/jenkins_home/
       - /var/run/docker.sock:/var/run/docker.sock
-
+    environment:
+      - JENKINS_ADMIN_ID=admin
+      - JENKINS_ADMIN_PASSWORD=admin

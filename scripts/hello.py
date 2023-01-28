@@ -1,3 +1,3 @@
 # This program prints Hello, world!
 
-print('Devops is great')
+print('Devops is great !')
